@@ -1,5 +1,11 @@
 RewriteEngine On
+RewriteBase /
 
+# Pomiń regułę, jeśli adres URL już zawiera .html
+RewriteCond %{REQUEST_URI} \.html$ [NC]
+RewriteRule ^ - [L]
+
+# Sprawdź czy żądanie nie jest katalogiem i czy plik .html istnieje
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteRule ^(.*)$ $1.html [L]
