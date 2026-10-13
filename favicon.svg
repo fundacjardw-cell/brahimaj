@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Czarne tło -->
+  <rect width="512" height="512" fill="#000000" />
+  
+  <!-- Pogrubiona litera B w lewym dolnym rogu -->
+  <text x="45" y="475" font-family="Arial, sans-serif" font-weight="900" font-size="440" fill="#FFFFFF">B</text>
+</svg>
